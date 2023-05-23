@@ -205,3 +205,30 @@ header{
   max-width: 30%;
   text-align: center;
 }
+
+
+/* "big-feature-section */
+.big-feature-section{
+  padding: 70px var(--padding-inline-section) 0;
+}
+
+.big-feature-container{
+  gap: 30px;
+
+}
+.feature-img img{
+  width: 100%;
+}
+
+.feature-desc{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-desc h4{
+  padding-bottom: 10px;
+}
+
+.feature-desc h3{
+  font-size: 2rem;
+}
