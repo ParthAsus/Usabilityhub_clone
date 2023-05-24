@@ -158,8 +158,11 @@ header{
 
 
 /* companies-header */
+.companies-section{
+  margin-block: 20px;
+}
 .companies-header{
-  padding-top: 40px;
+  padding-top: 20px;
   text-align: center;
   margin-block: 30px;
   color: var(--primary-text-color);
@@ -177,6 +180,7 @@ header{
 
 /* features section */
 .features-section{
+  margin-block: 40px;
   background-image: url(/img/asset\ 34.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -206,6 +210,17 @@ header{
   text-align: center;
 }
 
+.features-card img{
+  width: 50px;
+}
+
+.features-card a:hover{
+  color: var(--accent-color);
+}
+.features-header-btn:hover{
+  color: var(--accent-color);
+  
+}
 
 /* "big-feature-section */
 .big-feature-section{
@@ -227,8 +242,85 @@ header{
 
 .feature-desc h4{
   padding-bottom: 10px;
+  font-size: 1.3rem;
 }
 
 .feature-desc h3{
   font-size: 2rem;
+  color: var(--accent-color)
+}
+
+
+/* examples-heading-text */
+.examples-header{
+  flex-direction: column;
+  gap: 20px;
+}
+
+.examples-header a:hover{
+  color: var(--accent-color);
+}
+
+.examples-area{
+  justify-content: space-between;
+  margin-block: 40px;
+}
+
+.examples-card{
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1),rgb(0, 0, 0, 0.8)), url(/img/asset\ 36.jpeg);
+  background-size: cover;
+  transition: 0.2s ease-out;
+}
+
+.examples-card:hover{
+  box-shadow: 0 0 10px #888;
+}
+.card-text{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+
+.cta-section{
+  background-color: #183b54;
+}
+.cta-section-container{
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  padding: 30px;
+}
+
+/* footer */
+footer{
+  padding-block: 80px;
+  background-color: #ebf2fa;
+}
+.link-column{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-container{
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* subfooter */
+.subfooter{
+  background-color: #b9cde4;
+  padding: var(--padding-inline-section);
+}
+
+.subfooter-container{
+  justify-content: center;
+  gap: 30px;
 }
