@@ -24,7 +24,7 @@
       <a href="#" class="company-logo">
         <img src="/img/asset 1.png" alt="company logo">
       </a>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <ul class="flex">
           <li><a href="#" class="hover-links">Products</a></li>
           <li><a href="#" class="hover-links">Customer</a></li>
@@ -34,6 +34,7 @@
           <li><a href="#" class="hover-links primary-button">Sign-up</a></li>
         </ul>
       </div>
+      <a href="#" class="nav-toggle hover-links" id="nav-toggle"><i class="fa-solid fa-burger"></i></a>
     </div>
   </nav>
 
@@ -137,7 +138,7 @@
   </section>
 
   <section class="big-feature-section">
-    <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+    <div class="container flex big-feature-container second-big-feature">
       <div class="feature-img">
         <img src="/img/asset 21.png" alt="">
       </div>
@@ -251,6 +252,16 @@
 
   <!-- <div class="spacer" style="height: 100vh"></div> -->
   <script src="https://kit.fontawesome.com/4b9ceba59b.js" crossorigin="anonymous"></script>
+
+  <script>
+    const togglebutton = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    togglebutton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    })
+
+  </script>
 </body>
 
 </html>
